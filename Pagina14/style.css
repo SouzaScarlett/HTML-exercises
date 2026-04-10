@@ -1,0 +1,78 @@
+/* --- Estilos de Fundo e Texto --- */
+body {
+    background-color: #000080; /* Azul Marinho padrão */
+    color: white;
+    font-family: 'Segoe UI', sans-serif;
+    margin: 0;
+    padding: 40px 20px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+/* --- PROPRIEDADE OBRIGATÓRIA: Flexbox --- */
+.equipe-container {
+    display: flex; /* Ativa o modo flexível */
+    
+    /* Alinha os itens no centro horizontalmente */
+    justify-content: center; 
+    
+    /* Permite que os cards pulem para a linha de baixo se não couberem */
+    flex-wrap: wrap; 
+    
+    /* Espaço entre os cards */
+    gap: 30px; 
+    
+    max-width: 1200px;
+    margin: 0 auto; /* Centraliza o container na página */
+}
+
+/* --- Estilo das Divs de Membros --- */
+.membro-card {
+    /* Fundo branco para os cards */
+    background: white;
+    color: #333;
+    width: 280px;
+    padding: 30px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.4);
+    transition: transform 0.3s ease;
+}
+
+.membro-card:hover {
+    transform: translateY(-10px); /* Efeito de flutuação no mouse */
+}
+
+/* Estilo das Fotos */
+.membro-card img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%; /* Deixa a foto redonda */
+    border: 4px solid #000080; /* Borda azul marinho na foto */
+    margin-bottom: 15px;
+    object-fit: cover;
+}
+
+/* Textos dentro do card */
+.membro-card h3 {
+    margin: 10px 0 5px 0;
+    color: #000080;
+}
+
+.cargo {
+    font-weight: bold;
+    color: #3498db; /* Azul mais claro para o cargo */
+    display: block;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+}
+
+.bio {
+    font-size: 0.9rem;
+    line-height: 1.4;
+    color: #666;
+}
