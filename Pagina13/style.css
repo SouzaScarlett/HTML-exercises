@@ -1,0 +1,77 @@
+/* --- Estilos Globais (O segredo da centralização) --- */
+body {
+    /* Nosso padrão Azul Marinho */
+    background-color: #000080; 
+    /* Cor padrão do texto (para o título) */
+    color: white; 
+    font-family: Arial, sans-serif;
+    
+    /* Configuração para centralizar TUDO na tela */
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center;    /* Centraliza verticalmente */
+    
+    /* Importante: Define a altura mínima do corpo como 100% da altura da janela (viewport) */
+    min-height: 100vh; 
+    margin: 0;
+    padding: 20px;
+    box-sizing: border-box; /* Garante que o padding não quebre o layout */
+}
+
+/* Título principal do exercício */
+h1 {
+    margin-top: 0;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+/* --- Container do Produto --- */
+.card-produto {
+    /* Mantemos o fundo do card branco para contraste */
+    background: white;
+    color: #333; /* Texto escuro dentro do card */
+    padding: 30px;
+    border-radius: 12px; /* Bordas arredondadas */
+    width: 300px; /* Largura fixa para o card */
+    text-align: center;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.5); /* Sombra para dar profundidade */
+}
+
+/* --- ESTILIZAÇÃO DA IMAGEM RENDERIZADA --- */
+.card-produto img {
+    /* Garante que a imagem preencha a largura do card, mas não ultrapasse */
+    max-width: 100%; 
+    height: auto; /* Mantém a proporção da imagem */
+    display: block; /* Remove espaços em branco indesejados abaixo da imagem */
+    margin: 0 auto 20px auto; /* Centraliza a imagem no card e dá espaço abaixo dela */
+    
+    /* Ajuste visual para a imagem não encostar nas bordas brancas (opcional) */
+    padding: 10px;
+}
+
+/* --- Estilização do Texto --- */
+.card-produto h3 {
+    margin-top: 0;
+    color: #000080; /* Título do produto em azul marinho */
+}
+
+.descricao {
+    font-size: 0.9rem;
+    color: #666;
+    margin-bottom: 15px;
+}
+
+/* --- PROPRIEDADE OBRIGATÓRIA DO EXERCÍCIO: <del> e color --- */
+.preco-antigo del {
+    /* Deixa o preço antigo riscado em vermelho para destaque */
+    color: #e74c3c; 
+    font-weight: bold;
+}
+
+.preco-novo {
+    color: #27ae60; /* Preço novo em verde */
+    font-size: 1.6rem;
+    font-weight: bold;
+    margin-top: 5px;
+    margin-bottom: 0;
+}
