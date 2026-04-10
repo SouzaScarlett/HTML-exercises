@@ -1,0 +1,73 @@
+/* Configurações de cores para manter o padrão que você gostou */
+body {
+    background-color: #000080; /* Azul marinho */
+    color: white;
+    font-family: 'Segoe UI', sans-serif;
+    margin: 0;
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+h1 {
+    font-size: 2.5rem;
+    color: #ffffff;
+}
+
+/* ESTILIZAÇÃO DA LISTA (O foco do exercício) */
+.lista-postagens {
+    max-width: 800px;
+    margin: 0 auto; /* Centraliza a lista na tela */
+    
+    /* Propriedade obrigatória: list-style 
+       Aqui mudamos o marcador padrão (bolinha) */
+    list-style: square; 
+    
+    padding-left: 20px; /* Dá espaço para os marcadores aparecerem */
+}
+
+/* Estilo de cada item (postagem) */
+.postagem {
+    background-color: white;
+    color: #333; /* Texto escuro para leitura no fundo branco do card */
+    margin-bottom: 30px;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+/* Estilizando o marcador da lista (opcional, para ficar mais bonito) */
+.postagem::marker {
+    color: #add8e6; /* Cor azul clara para o quadradinho da lista */
+    font-size: 1.5rem;
+}
+
+.postagem h2 {
+    margin-top: 0;
+    color: #000080;
+}
+
+.data {
+    font-size: 0.9rem;
+    color: #666;
+    display: block;
+    margin-bottom: 15px;
+}
+
+.btn-leia-mais {
+    display: inline-block;
+    margin-top: 15px;
+    color: #000080;
+    text-decoration: none;
+    font-weight: bold;
+    border-bottom: 2px solid #000080;
+    transition: 0.3s;
+}
+
+.btn-leia-mais:hover {
+    color: #3498db;
+    border-color: #3498db;
+}
