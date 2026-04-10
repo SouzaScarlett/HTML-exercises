@@ -1,0 +1,35 @@
+/* style.css */
+
+body {
+    background-color: #000080; /* Azul Marinho (Navy) */
+    color: white;             /* Muda a cor do texto para branco para dar contraste */
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;            /* Garante que o fundo ocupe a tela toda */
+}
+
+.perfil { 
+    text-align: center; 
+    font-family: sans-serif; 
+    padding: 20px; 
+} 
+
+
+img { 
+    width: 200px;         /* Um tamanho equilibrado (menor que 250px) */
+    height: 200px;        /* Deve ser igual à largura para um círculo perfeito */
+    border-radius: 50%; 
+    border: 5px solid white; 
+    object-fit: cover;    /* ESTA LINHA É A CHAVE: impede que a foto fique esticada ou achatada */
+    object-position: center; /* centro da foto visível */
+    margin-bottom: 20px;
+    box-shadow: 0px 4px 15px rgba(0,0,0,0.3); /* sombra suave para dar profundidade */
+}
+
+.links a {
+    color: #add8e6; /* Um azul clarinho para os links ficarem legíveis */
+    text-decoration: none;
+    font-weight: bold;
+}
