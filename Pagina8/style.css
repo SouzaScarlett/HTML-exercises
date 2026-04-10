@@ -1,0 +1,70 @@
+/* Mantendo nossa identidade visual */
+body {
+    background-color: #000080;
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* PROPRIEDADE OBRIGATÓRIA: box-sizing */
+/* Aplicamos em tudo (*) para garantir que padding e bordas não aumentem o tamanho total dos elementos */
+* {
+    box-sizing: border-box;
+}
+
+.produto-card {
+    background: white;
+    width: 350px;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.4);
+}
+
+.produto-card img {
+    width: 100%;
+    display: block;
+}
+
+.info {
+    padding: 25px;
+    text-align: center;
+}
+
+h2 {
+    margin: 0;
+    color: #333;
+}
+
+.descricao {
+    color: #666;
+    font-size: 0.9rem;
+    margin: 15px 0;
+}
+
+.preco {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #000080;
+    margin-bottom: 20px;
+}
+
+/* Estilização da tag obrigatória <button> */
+.btn-compra {
+    background-color: #000080;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    width: 100%; /* Ocupa toda a largura do card */
+    font-size: 1.1rem;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.btn-compra:hover {
+    background-color: #3498db;
+}
