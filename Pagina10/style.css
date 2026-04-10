@@ -1,0 +1,55 @@
+/* Mantendo o azul marinho no fundo */
+body {
+    background-color: #000080;
+    color: white;
+    font-family: 'Georgia', serif; /* Uma fonte serifada para parecer editorial */
+    margin: 0;
+    padding: 40px;
+    text-align: center;
+}
+
+h1 { margin-bottom: 50px; }
+
+.testemunhos-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+/* Estilo do container de depoimento */
+.card-testemunho {
+    background-color: white;
+    color: #333;
+    max-width: 300px;
+    padding: 30px;
+    border-radius: 15px;
+    margin: 0;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.4);
+    position: relative;
+}
+
+.card-testemunho img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+    border: 3px solid #000080;
+    object-fit: cover;
+}
+
+/* PROPRIEDADE OBRIGATÓRIA: font-style */
+.card-testemunho p {
+    font-style: italic; /* Deixa o texto do depoimento em itálico */
+    font-size: 1.1rem;
+    line-height: 1.5;
+    margin-bottom: 15px;
+}
+
+/* Estilo do nome do cliente */
+cite {
+    font-style: normal; /* Remove o itálico padrão da tag cite */
+    font-weight: bold;
+    color: #000080;
+    display: block;
+}
