@@ -1,0 +1,53 @@
+/* Mantendo o padrão Azul Marinho */
+body {
+    background-color: #000080;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.faq-container {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Estilização da tag <details> */
+details {
+    background-color: white;
+    color: #333;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    overflow: hidden;
+    /* Propriedade obrigatória: transition 
+       Ela suaviza mudanças de estado (como cor ou sombra) */
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+/* Efeito ao abrir ou passar o mouse */
+details:hover {
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    transform: scale(1.02); /* Aumenta levemente */
+}
+
+/* Estilo do título da pergunta */
+summary {
+    padding: 20px;
+    font-weight: bold;
+    list-style: none; /* Remove a setinha padrão do navegador se desejar */
+    outline: none;
+    border-bottom: 1px solid #eee;
+}
+
+/* Estilo da resposta */
+.conteudo {
+    padding: 20px;
+    line-height: 1.6;
+    background-color: #f9f9f9;
+}
