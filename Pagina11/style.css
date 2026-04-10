@@ -1,0 +1,73 @@
+/* Mantendo nossa identidade visual Azul Marinho */
+body {
+    background-color: #000080;
+    color: white;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.sitemap-container {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: white; /* Card branco para contraste */
+    color: #333;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.4);
+}
+
+/* Estilo da Lista Principal (Nível 1) */
+.lista-principal {
+    padding-left: 0;
+    margin: 0;
+}
+
+.lista-principal > li {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: #000080;
+}
+
+/* Estilo dos links gerais */
+.sitemap-container a {
+    text-decoration: none;
+    color: inherit; /* Herda a cor do elemento pai */
+    transition: color 0.3s;
+}
+
+.sitemap-container a:hover {
+    color: #3498db; /* Azul mais claro no hover */
+}
+
+/* Estilo da Sublista Aninhada (Nível 2) */
+/* PROPRIEDADE OBRIGATÓRIA: display */
+.sublista {
+    margin-top: 10px;
+    padding-left: 30px; /* Recuo para indicar hierarquia */
+    
+    /* Removemos o marcador padrão (bolinha) */
+    list-style: none; 
+}
+
+.sublista li {
+    font-size: 1rem;
+    font-weight: normal;
+    margin-bottom: 8px;
+    position: relative;
+    padding-left: 15px;
+}
+
+/* Adicionando um tracinho visual como marcador (opcional, para design) */
+.sublista li::before {
+    content: "—";
+    position: absolute;
+    left: 0;
+    color: #aaa;
+}
