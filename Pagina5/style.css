@@ -1,0 +1,69 @@
+/* Mantendo nossa identidade visual Azul Marinho */
+body {
+    background-color: #000080;
+    color: white;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+h1 {
+    color: #ffffff;
+}
+
+/* ESTILIZAÇÃO DO FORMULÁRIO (O foco do exercício) */
+.formulario-contato {
+    background-color: white;
+    color: #333; /* Texto escuro dentro do formulário */
+    max-width: 500px;
+    margin: 0 auto; /* Centraliza o formulário */
+    padding: 30px;
+    border-radius: 12px;
+
+    /* Propriedade obrigatória: box-shadow 
+       Sintaxe: deslocamento-x deslocamento-y desfoque espalhamento cor */
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.5); 
+}
+
+/* Estilizando cada campo do formulário */
+.campo {
+    margin-bottom: 20px;
+}
+
+.campo label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+.campo input, .campo textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    /* Usando box-sizing para o padding não "empurrar" o input para fora */
+    box-sizing: border-box; 
+}
+
+/* Estilizando o botão de envio */
+.btn-enviar {
+    background-color: #000080;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.btn-enviar:hover {
+    background-color: #3498db; /* Muda para um azul mais claro ao passar o mouse */
+}
