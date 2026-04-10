@@ -1,0 +1,65 @@
+/* Configurações básicas do corpo da página */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #043f58;
+    margin: 0;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Estilização do cabeçalho */
+header {
+    margin-bottom: 40px;
+}
+
+/* CONFIGURAÇÃO DA GRADE  */
+.grid-portfolio {
+    /* Ativa o modelo de layout CSS Grid no elemento pai */
+    display: grid; 
+    
+    /* Define colunas flexíveis:
+       - repeat: repete a estrutura
+       - auto-fit: preenche o espaço conforme o tamanho da tela
+       - minmax: cada coluna tem no mínimo 250px e no máximo 1 fração do espaço disponível */
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    
+    /* Define o espaçamento (buracos) entre as colunas e linhas da grade */
+    gap: 20px; 
+    
+    max-width: 1200px;
+    margin: 0 auto; /* Centraliza o container na página */
+}
+
+/* Estilização individual de cada Card */
+.card-projeto {
+    background: white;
+    border: 1px solid #060000;
+    border-radius: 8px; /* Arredonda as bordas do card */
+    overflow: hidden;   /* Garante que a imagem não saia para fora da borda arredondada */
+    
+    /* Cria uma transição suave de 0.3 segundos para qualquer mudança (como o hover) */
+    transition: transform 0.3s ease; 
+}
+
+/* Efeito visual quando o mouse passa por cima do card */
+.card-projeto:hover {
+    /* Move o card 5 pixels para cima no eixo Y */
+    transform: translateY(-5px); 
+    /* Adiciona uma sombra para dar efeito de profundidade/elevação */
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+/* Garante que a imagem ocupe toda a largura do card e mantenha a proporção */
+.card-projeto img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Estilo do título dentro do card */
+.card-projeto h3 {
+    padding: 15px;
+    margin: 0;
+    font-size: 1.1rem;
+    color: #333;
+}
