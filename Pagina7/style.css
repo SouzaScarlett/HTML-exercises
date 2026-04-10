@@ -1,0 +1,55 @@
+body {
+    background-color: #000080; /* Nosso azul marinho */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: sans-serif;
+}
+
+.login-container {
+    background: white;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.5);
+    width: 300px;
+    text-align: center;
+}
+
+h2 { color: #333; margin-bottom: 20px; }
+
+.input-group {
+    text-align: left;
+    margin-bottom: 15px;
+}
+
+label { display: block; margin-bottom: 5px; color: #666; }
+
+/* PROPRIEDADE OBRIGATÓRIA: border */
+input {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    /* Aqui aplicamos a borda pedida no exercício */
+    border: 2px solid #000080; 
+    border-radius: 4px;
+    outline: none; /* Remove aquela linha azul padrão do navegador */
+    transition: border-color 0.3s;
+}
+
+/* Efeito para quando o usuário clica no campo */
+input:focus {
+    border-color: #3498db; /* A borda muda de cor ao clicar */
+}
+
+button {
+    background-color: #000080;
+    color: white;
+    border: none;
+    padding: 12px;
+    width: 100%;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+}
