@@ -1,0 +1,57 @@
+/* Mantendo nossa identidade visual Azul Marinho */
+body {
+    background-color: #000080;
+    color: white;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 40px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.tabela-container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 800px;
+    margin: 0 auto;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+}
+
+/* ESTILIZAÇÃO DA TABELA */
+table {
+    width: 100%;
+    color: #333;
+    
+    /* PROPRIEDADE OBRIGATÓRIA: border-collapse 
+       Faz com que as bordas das células se unam em uma única linha fina */
+    border-collapse: collapse; 
+}
+
+th, td {
+    padding: 15px;
+    text-align: center;
+    border: 1px solid #ddd; /* Borda leve para separar as células */
+}
+
+/* Cabeçalho da Tabela */
+thead th {
+    background-color: #000080;
+    color: white;
+    font-size: 1.1rem;
+}
+
+/* Efeito Zebrado (Dica extra para ficar profissional) */
+tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+/* Rodapé da Tabela */
+tfoot td {
+    background-color: #f9f9f9;
+    font-size: 1.2rem;
+    color: #000080;
+}
